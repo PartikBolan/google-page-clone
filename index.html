@@ -1,74 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Clone</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
-<body>
-    <header>
-        <div>
-            <p>About</p>
-            <p>Store</p>
+<body class="font-['Arial']">
+    <header class="flex justify-between h-12 font-normal text-gray-800  " >
+        <div class="flex gap-3 items-center mx-5 text-[12px] ">
+            <p class="leading-6 hover:underline cursor-pointer">About</p>
+            <p class="leading-6 hover:underline cursor-pointer">Store</p>
         </div>
-        <div>
-            <p>Gmail</p>
-            <p>Images</p>
-            <img src="assests/googleLab.png" alt="googleLab">
-            <img src="assests/googleApps.png" alt="googleApps">
-            <img src="assests/googleAccount.png" alt="googleAccount">
+        <div class="flex items-center mr-2 text-[10px]">
+            <p class="hover:underline mx-2">Gmail</p>
+            <p class="hover:underline cursor-pointer mx-2">Images</p>
+            <img src="assests/googleLab.png" alt="googleLab" class="h-8 mx-2 rounded-full hover:shadow-lg cursor-pointer">
+            <img src="assests/googleApps.png" alt="googleApps" class="h-8 rounded-full hover:shadow-lg cursor-pointer">
+            <img src="assests/googleAccount.png" alt="googleAccount" class="rounded-full h-6 ml-2 hover:shadow-lg cursor-pointer">
         </div>
     </header>
     <main>
-        <section>
-            <div>
-                <img src="assests/paris-games-football.gif" alt="main-logo">
-                <img src="assests/share.png" alt="share">
+        <section class="grid place-items-center mt-2">
+            <div class="relative">
+                <img src="assests/paris-games-football.gif" alt="main-logo" class="h-28">
+                <img src="assests/share.png" alt="share" class="h-3 absolute bottom-3 left-full ml-0 sm:ml-3 hover:scale-110 shadow-2xl cursor-pointer" >
             </div>
         </section>
-        <section>
-            <div>
-                <img src="assests/search.png" alt="search">
-                <input type="text">
-                <img src="assests/googleMic.png" alt="googleMic">
-                <img src="assests/googleLens.png" alt="googleLens">
+        <section class="flex justify-center mt-6">
+            <div class="flex border outline-none rounded-3xl items-center h-10 sm:w-[450px] w-[300px] hover:shadow-md focus-within:shadow-md " >
+                <img src="assests/search.png" alt="search" class="h-2.5 mx-3">
+                <input type="text" class="border-0 outline-0 w-full text-xs font-light" >
+                <img src="assests/googleMic.png" alt="googleMic" class="h-5 mx-2">
+                <img src="assests/googleLens.png" alt="googleLens" class="h-5 mx-2">
             </div>
         </section>
-        <section>
-            <p>Google Search</p>
-            <p>I'm Feeling Lucky</p>
+        <section class="flex justify-center my-7 text-xs font-light text-slate-600 ">
+            <p class="mx-3 p-1 px-3 border rounded border-transparent hover:border-gray-300">Google Search</p>
+            <p class="mx-3 p-1 px-3 border rounded border-transparent hover:border-gray-300">I'm Feeling Lucky</p>
         </section>
-        <section>
-            <p>Google Offered in:</p>
-            <span>हिन्दी</span>
-            <span>বাংলা</span>
-            <span>తెలుగు</span>
-            <span>मराठी</span>
-            <span>தமிழ்</span>
-            <span>ગુજરાતી</span>
-            <span>ಕನ್ನಡ</span>
-            <span>മലയാളം</span>
-            <span>ਪੰਜਾਬੀ</span>
+        <section class=" text-[10px] sm:flex justify-center text-blue-800 [&>*]:mx-1 ">
+            <p class="font-light text-slate-600 mx-1 text-center mb-2">Google Offered in: </p>
+            <span class="hover:underline ml-4 sm:ml-0">हिन्दी</span>
+            <span class="hover:underline ">বাংলা</span>
+            <span class="hover:underline ">తెలుగు</span>
+            <span class="hover:underline ">मराठी</span>
+            <span class="hover:underline ">தமிழ்</span>
+            <span class="hover:underline ">ગુજરાતી</span>
+            <span class="hover:underline ">ಕನ್ನಡ</span>
+            <span class="hover:underline ">മലയാളം</span>
+            <span class="hover:underline ">ਪੰਜਾਬੀ</span>
         </section>
     </main>
-    <section>
-        <p>India</p>
+    <section class="absolute  bg-[#F2F2F2] w-screen h-10 py-3 bottom-10">
+        <p class="mx-6 text-xs font-light text-slate-600">India</p>
     </section>
-    <footer>
-        <div>
-            <p>Advertising</p>
-            <p>Business</p>
-            <p>How search works</p>
+    <footer class="flex justify-between absolute bottom-0 w-screen p-2 py-3 bg-[#F2F2F2] border-t-2 text-slate-600">
+        <div class="flex text-[11px] gap-4 mx-1 sm:mx-5 hover:[&>*]:underline">
+            <p >Advertising</p>
+            <p >Business</p>
+            <p >How search works</p>
         </div>
-        <div>
-            <p>Privacy</p>
-            <p>Terms</p>
-            <p>Settings</p>
+        <div class="flex text-[11px] gap-4 mx-1 sm:mx-5 hover:[&>*]:underline">
+            <p >Privacy</p>
+            <p >Terms</p>
+            <p >Settings</p>
         </div>
     </footer>
-
 </body>
-
 </html>
