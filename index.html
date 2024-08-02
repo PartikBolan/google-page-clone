@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Google Page Clone</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="font-['Arial']">
@@ -68,5 +67,14 @@
             <p >Settings</p>
         </div>
     </footer>
+    <script>
+        const inputField=document.getElementsByTagName("input")[0];
+        if(inputField){
+        inputField.addEventListener("keydown",(event)=>{
+            if(event.key==="Enter"){
+                document.location.href=`https://www.google.com/search?q=${inputField.value}`
+            }
+        })}
+    </script>
 </body>
 </html>
